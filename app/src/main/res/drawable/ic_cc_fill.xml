@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ created by Sayem Hossen Saimon on  at .
+Email: saimonchowdhuryi96@gmail.com.
+Phone: +8801882046404.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_cc" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_cc" />
+</selector>

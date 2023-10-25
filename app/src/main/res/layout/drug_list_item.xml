@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ created by Sayem Hossen Saimon on  at .
+Email: saimonchowdhuryi96@gmail.com.
+Phone: +8801882046404.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drug_list_bg"
+        android:orientation="horizontal"
+        android:paddingStart="4dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="6dp"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:id="@+id/drugNameTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:gravity="center|start"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:text="Napa 500 djh"
+            android:textColor="@color/black_text_secondary" />
+
+        <ImageView
+            android:id="@+id/infoView"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_weight=".3"
+            android:paddingStart="8dp"
+            android:src="@drawable/ic_info" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

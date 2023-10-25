@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/allApFragment">
+
+    <fragment
+        android:id="@+id/appointmentFragment"
+        android:name="evereast.co.doctor.Fragments.AppointmentFragment"
+        android:label="fragment_appointment"
+        tools:layout="@layout/fragment_appointment" />
+    <fragment
+        android:id="@+id/upcomingApFragment"
+        android:name="evereast.co.doctor.Fragments.UpcomingApFragment"
+        android:label="UpcomingApFragment" />
+    <fragment
+        android:id="@+id/completedApFragment"
+        android:name="evereast.co.doctor.Fragments.CompletedApFragment"
+        android:label="fragment_completed_ap"
+        tools:layout="@layout/fragment_completed_ap" />
+    <fragment
+        android:id="@+id/allApFragment"
+        android:name="evereast.co.doctor.Fragments.AllApFragment"
+        android:label="fragment_all_ap"
+        tools:layout="@layout/fragment_all_ap" />
+</navigation>

@@ -1,0 +1,23 @@
+
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url='https://jitpack.io'}
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url 'https://storage.zego.im/maven' }  // <- Add this line.
+        maven { url='https://jitpack.io'}
+    }
+}
+
+include ':app'
+rootProject.name = "Doctor"

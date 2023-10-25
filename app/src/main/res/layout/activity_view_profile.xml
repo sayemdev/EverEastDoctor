@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    android:orientation="vertical"
+    tools:context="doctor.Activity.ViewProfileActivity">
+
+    <include layout="@layout/colored_app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:elevation="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:id="@+id/feeTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="4dp"
+                        android:padding="6dp"
+                        android:textAppearance="@style/forgot_pass"
+                        android:textStyle="bold"
+                        tools:text="@string/fee_199tk" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="100dp"
+                            android:layout_height="100dp">
+
+                            <com.mikhaellopez.circularimageview.CircularImageView
+                                android:id="@+id/profileImageView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:layout_marginStart="6dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginEnd="6dp"
+                                android:layout_marginBottom="6dp"
+                                android:src="@drawable/fahad"
+                                app:civ_border_color="@color/app_bar_color"
+                                app:civ_border_width="2dp" />
+
+                            <ImageView
+                                android:visibility="gone"
+                                android:id="@+id/editProfilePicImageview"
+                                android:layout_width="42dp"
+                                android:layout_height="42dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/circle_darker"
+                                android:backgroundTint="@color/dark_background"
+                                android:padding="6dp"
+                                android:src="@drawable/ic_camera" />
+
+                        </RelativeLayout>
+
+                        <RatingBar
+                            android:id="@+id/ratingBar"
+                            style="@style/CustomRatingBarSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            android:rating="4.5"
+                            android:stepSize="0.01" />
+
+                        <TextView
+                            android:id="@+id/doctorNameTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="@string/dr_fahad_bin_alauddin"
+                            android:textAppearance="@style/s16"
+                            android:textColor="@color/black_text_secondary"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/degreeTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="@string/mbbs"
+                            android:textAppearance="@style/forgot_pass" />
+                        <TextView
+                            android:id="@+id/designation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Designation"
+                            android:textAppearance="@style/forgot_pass" />
+
+                        <TextView
+                            android:id="@+id/category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Psychiatry"
+                            android:textAppearance="@style/forgot_pass" />
+
+
+                        <TextView
+                            android:id="@+id/worksAt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="Works At"
+                            android:textAppearance="@style/forgot_pass"
+                            tools:visibility="visible" />
+
+
+                        <TextView
+                            android:id="@+id/about"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="About"
+                            android:textAppearance="@style/forgot_pass"
+                            tools:visibility="visible" />
+
+                        <TextView
+                            android:visibility="gone"
+                            tools:visibility="visible"
+                            android:id="@+id/mbdc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="4dp"
+                            android:text="BMD&amp;C 1345"
+                            android:textAppearance="@style/forgot_pass"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

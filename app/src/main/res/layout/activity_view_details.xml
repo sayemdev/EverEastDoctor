@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.ViewDetailsActivity">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/wholeThing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <include layout="@layout/colored_app_bar" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/dark_background"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:baselineAligned="false"
+                                android:orientation="horizontal"
+                                android:padding="12dp">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="?attr/selectableItemBackground"
+                                        android:onClick="SetFollow"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:id="@+id/followUpDateTV"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:backgroundTint="@color/app_bar_color"
+                                            android:drawablePadding="12dp"
+                                            android:drawableTint="@color/app_bar_color"
+                                            android:gravity="center"
+                                            android:padding="6dp"
+                                            android:text="Set a follow up"
+                                            android:textColor="@color/app_bar_color"
+                                            app:drawableEndCompat="@drawable/ic_expand" />
+
+                                    </LinearLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/paymentStatusTV"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentStart="true"
+                                            android:background="@drawable/round_from_left_small"
+                                            android:paddingStart="12dp"
+                                            android:paddingTop="2dp"
+                                            android:paddingEnd="12dp"
+                                            android:paddingBottom="2dp"
+                                            android:textColor="@color/white"
+                                            tools:text="Unpaid" />
+
+                                        <TextView
+                                            android:id="@+id/appointmentStatusTV"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignBaseline="@+id/paymentStatusTV"
+                                            android:layout_toEndOf="@id/paymentStatusTV"
+                                            android:background="@drawable/round_from_right_small"
+                                            android:paddingStart="12dp"
+                                            android:paddingTop="2dp"
+                                            android:paddingEnd="12dp"
+                                            android:paddingBottom="2dp"
+                                            android:textColor="@color/white"
+                                            tools:text="Pending" />
+
+                                        <TextView
+                                            android:id="@+id/offline"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@id/appointmentStatusTV"
+                                            android:layout_marginTop="12dp"
+                                            android:background="@drawable/round"
+                                            android:backgroundTint="@color/light_green"
+                                            android:paddingStart="12dp"
+                                            android:paddingTop="2dp"
+                                            android:paddingEnd="12dp"
+                                            android:paddingBottom="2dp"
+                                            android:text="Offline"
+                                            android:textColor="@color/white" />
+
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/showDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start|center"
+                                        android:padding="4dp"
+                                        android:text="@string/app_name"
+                                        android:textAppearance="@style/s16"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/patientNameTv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start|center"
+                                        android:padding="4dp"
+                                        android:text="@string/app_name" />
+
+                                    <TextView
+                                        android:id="@+id/doctorNameTv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start|center"
+                                        android:padding="4dp"
+                                        android:text="@string/app_name"
+                                        android:textColor="@color/black_text_secondary"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/doctorCategory"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="start|center"
+                                        android:padding="4dp"
+                                        android:text="@string/app_name" />
+
+                                    <com.google.android.material.chip.Chip
+                                        android:id="@+id/appointmentNumberChip"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="@color/ap_chip_color"
+                                        android:checkable="false"
+                                        android:enabled="false"
+                                        android:text="1st Appointment"
+                                        android:textColor="@color/white_text"
+                                        app:textEndPadding="12dp"
+                                        app:textStartPadding="12dp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginEnd="4dp"
+                                    android:layout_weight=".6"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <com.mikhaellopez.circularimageview.CircularImageView
+                                        android:id="@+id/dProfileImageView"
+                                        android:layout_width="90dp"
+                                        android:layout_height="99dp"
+                                        android:adjustViewBounds="true"
+                                        android:src="@drawable/fahad"
+                                        app:civ_border_color="@color/app_bar_color"
+                                        app:civ_border_width="2dp" />
+
+                                    <RatingBar
+                                        android:id="@+id/ratingBar"
+                                        style="@style/CustomRatingBarSmall"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="4dp"
+                                        android:isIndicator="true"
+                                        android:numStars="5"
+                                        android:rating="4.5"
+                                        android:stepSize="0.01" />
+
+                                    <TextView
+                                        android:id="@+id/feeTv"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:padding="6dp"
+                                        android:text="@string/fee_199tk"
+                                        android:textAppearance="@style/forgot_pass"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:id="@+id/rateNowTV"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="?selectableItemBackground"
+                                        android:gravity="center"
+                                        android:padding="6dp"
+                                        android:text="Rate Now"
+                                        android:textColor="@color/app_bar_color"
+                                        android:textStyle="bold"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="12dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start|center"
+                                    android:padding="4dp"
+                                    android:text="Complain Brief"
+                                    android:textColor="@color/black_text_secondary"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/problemBrief"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start|center"
+                                    android:paddingStart="4dp"
+                                    android:paddingTop="8dp"
+                                    android:paddingEnd="4dp"
+                                    android:text="@string/lorem_text"
+                                    android:textColor="@color/black_text_secondary" />
+
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            app:cardElevation="3dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="12dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="start|center"
+                                    android:padding="4dp"
+                                    android:text="Document"
+                                    android:textColor="@color/black_text_secondary"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:padding="12dp">
+
+                                    <androidx.recyclerview.widget.RecyclerView
+                                        android:id="@+id/resourceList"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="7"
+                                        tools:itemCount="1" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.5"
+                                        android:background="?attr/selectableItemBackground"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:visibility="gone"
+                                        tools:ignore="UseCompoundDrawables">
+
+                                        <ImageView
+                                            android:id="@+id/selectImage"
+                                            android:layout_width="70dp"
+                                            android:layout_height="65.0dp"
+                                            android:layout_gravity="center"
+                                            android:adjustViewBounds="true"
+                                            android:padding="8dp"
+                                            android:src="@drawable/ic_upload_file"
+                                            tools:ignore="ContentDescription" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingTop="8dp"
+                                            android:text="Upload" />
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+
+                                    <Button
+                                        android:id="@+id/consultPatient"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginEnd="@dimen/_12sdp"
+                                        android:layout_weight="1"
+                                        android:enabled="false"
+                                        android:paddingStart="6dp"
+                                        android:paddingEnd="6dp"
+                                        android:text="Consult with Patient"
+                                        android:textAllCaps="false"
+                                        android:textColor="@color/white"
+                                        app:elevation="2dp"
+                                        app:icon="@drawable/ic_arrow_right"
+                                        app:iconGravity="end"
+                                        app:iconTint="@color/white" />
+
+                                    <Button
+                                        android:id="@+id/bookingReceiptButton"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:drawablePadding="@dimen/_12sdp"
+                                        android:gravity="center"
+                                        android:text="Booking Receipt"
+                                        android:textAllCaps="false"
+                                        android:visibility="gone"
+                                        android:textColor="@color/white"
+                                        app:icon="@drawable/ic_download_icon"
+                                        app:iconGravity="end" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/postAppointmentList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone" />
+
+                            <ProgressBar
+                                android:id="@+id/progressBarId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerInParent="true" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                tools:visibility="visible" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottomApp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:background="@android:color/transparent"
+                android:elevation="0dp"
+                android:theme="@style/BottomNavigationView"
+                app:elevation="0dp"
+                app:itemIconTint="@color/chip_background"
+                app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+                app:itemTextColor="@color/chip_background"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/bottom_menu" />
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@null"
+            android:onClick="SetAppointment"
+            android:src="@drawable/ic_vector"
+            android:visibility="gone"
+            app:borderWidth="0dp"
+            app:layout_anchor="@id/bottomApp"
+            app:showMotionSpec="@anim/cycle"
+            app:tint="@color/app_bar_color"
+            tools:ignore="TooManyViews" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/white">
+
+        <include layout="@layout/drawer_layout" />
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

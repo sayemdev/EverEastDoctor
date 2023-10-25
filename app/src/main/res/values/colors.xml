@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#fafaff</color>
+    <color name="purple_500">#fafaff</color>
+    <color name="purple_700">#fafaff</color>
+    <color name="teal_200">#fafaff</color>
+    <color name="teal_700">#fafaff</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#28ACC0</color>
+    <color name="colorPrimaryDark">#cdcdcd</color>
+    <color name="colorPrimary">#28ACC0</color>
+    <color name="app_bar_color">#28ACC0</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#000000</color>
+    <color name="red">@android:color/holo_red_light</color>
+    <color name="black_text_secondary">#413F3F</color>
+    <color name="dark_background">#85FFFFFF</color>
+    <color name="light_green">#cdcdcd</color>
+    <color name="transparent">#CCCCCC</color>
+    <color name="status_text">#FF000000</color>
+    <color name="darker_gray">@android:color/darker_gray</color>
+    <color name="view_color">#33000000</color>
+    <color name="rcv_bg">#F0F0F0</color>
+    <color name="ap_chip_color">#9FB3BF</color>
+    <color name="appBackground">#ffffff</color>
+    <color name="callBackground">#2c2c2c</color>
+    <color name="chat_incomming">#9EEBBD</color>
+    <color name="rating_bar_color">#F89748</color>
+    <color name="rating_bar_back">#C6C6C4C4</color>
+    <color name="thinnes_color">#fdd835</color>
+    <color name="deep_green">#00E676</color>
+    <color name="normal_color">#9CCC65</color>
+    <color name="over_height">#ef5350</color>
+    <color name="obesity1_color">#f44336</color>
+    <color name="obesity2_color">#e53935</color>
+    <color name="obesity_3_color">#DF6B47</color>
+    <color name="accept_call">#03DA9D</color>
+    <color name="end_red">#FF5722</color>
+    <color name="call_bg">#99000000</color>
+    <color name="black_text">#99000000</color>
+    <color name="white_text">#FFF</color>
+    <color name="status_bar_color" >@color/app_bar_color</color>
+
+    <color name="tab_unselected">#8A0F9797</color>
+    <color name="unseen_bg_color">#7DD3D3</color>
+    <color name="keyboard_dark_button">#b7bfca</color>
+</resources>

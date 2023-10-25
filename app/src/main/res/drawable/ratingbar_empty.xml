@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ created by Sayem Hossen Saimon on  at .
+Email: saimonchowdhuryi96@gmail.com.
+Phone: +8801882046404.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:state_window_focused="true"
+        android:drawable="@drawable/ic_star_outlined" />
+
+    <item android:state_focused="true"
+        android:state_window_focused="true"
+        android:drawable="@drawable/ic_star_outlined" />
+
+    <item android:state_selected="true"
+        android:state_window_focused="true"
+        android:drawable="@drawable/ic_star_outlined" />
+
+    <item android:drawable="@drawable/ic_star_outlined" />
+</selector>

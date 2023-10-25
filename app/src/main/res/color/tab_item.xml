@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ created by Sayem Hossen Saimon on  at .
+Email: saimonchowdhuryi96@gmail.com.
+Phone: +8801882046404.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@color/tab_unselected" android:state_checked="false"/>
+    <item android:color="@color/app_bar_color" android:state_checked="true"/>
+</selector>

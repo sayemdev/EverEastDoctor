@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="doctor.Activity.ApplyToWorkActivity">
+
+<!--
+    <include layout="@layout/app_bar" />
+-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbarThumbVertical="@null">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/apply"
+                android:textAppearance="@style/title"/>
+
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edit_text_rect"
+                android:hint="@string/your_name"
+                android:inputType="textCapWords"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/bmdcNumberEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edit_text_rect"
+                android:ellipsize="end"
+                android:hint="@string/bmdc"
+                android:padding="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/birthDayEt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_rect"
+                    android:drawableEnd="@drawable/ic_expand"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/birthday"
+                    android:padding="16dp"
+                    tools:targetApi="m" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="4dp"
+                    android:layout_weight=".04" />
+
+                <EditText
+                    android:id="@+id/genderEt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_rect"
+                    android:drawableEnd="@drawable/ic_expand"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/gender"
+                    android:padding="16dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edit_text_rect"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/degreeEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edit_text_rect"
+                android:hint="Degree"
+                android:padding="16dp" />
+            <EditText
+                android:id="@+id/designationEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edit_text_rect"
+                android:hint="Designation"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/jobExperienceEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edit_text_rect"
+                android:gravity="start|top"
+                android:hint="Job Experience"
+                android:maxLines="3"
+                android:minLines="3"
+                android:padding="16dp" />
+
+            <EditText
+                android:id="@+id/aboutSelf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edit_text_rect"
+                android:gravity="start|top"
+                android:hint="Tell us about your self"
+                android:maxLines="3"
+                android:minLines="3"
+                android:padding="16dp" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/haveAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="@string/already_have_an_account"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/app_bar_color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

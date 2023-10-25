@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="doctor.login.VideoCallActivity">
+
+    <FrameLayout
+        android:id="@+id/remote_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_background">
+
+        <TextureView
+            android:id="@+id/remote_texture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/remote_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/videoToggleLT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#61000000" />
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_video_camera_off"
+                app:tint="#BEFFFFFF" />
+
+            <TextView
+                android:id="@+id/closeCameraText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/close"
+                android:layout_centerInParent="true"
+                android:text="Patient turned off camera"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/closeMINI"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_video_camera_off"
+                android:visibility="gone"
+                app:tint="#BEFFFFFF" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <TextureView
+        android:id="@+id/local_texture_mini"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/local_view"
+        android:layout_width="150dp"
+        android:layout_height="210dp"
+        android:layout_alignParentEnd="true"
+        android:background="@color/dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextureView
+            android:id="@+id/local_texture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/local_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/logout_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/end_call_circle"
+        android:padding="16dp"
+        android:src="@drawable/ic_reject_call" />
+
+    <RelativeLayout
+        android:id="@+id/videoController"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/logout_room"
+        android:layout_marginBottom="12dp"
+        android:paddingStart="36dp"
+        android:paddingEnd="36dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/camera_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/circle_darker"
+            android:padding="16dp"
+            android:src="@drawable/ic_video_camera_off" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mic_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_darker"
+            android:padding="16dp"
+            android:src="@drawable/ic_microphone_off" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/circle_darker"
+            android:padding="16dp"
+            android:src="@drawable/ic_flip_camera" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ created by Sayem Hossen Saimon on  at .
+Email: saimonchowdhuryi96@gmail.com.
+Phone: +8801882046404.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="#FFAB40"/>
+    <corners android:bottomRightRadius="4dp"
+        android:topRightRadius="4dp"/>
+
+</shape>

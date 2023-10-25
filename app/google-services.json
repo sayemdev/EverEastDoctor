@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "1000447869115",
+    "firebase_url": "https://evereast-t-default-rtdb.firebaseio.com",
+    "project_id": "evereast-t",
+    "storage_bucket": "evereast-t.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000447869115:android:470c45353bb574047e699e",
+        "android_client_info": {
+          "package_name": "clinicure.co.doctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000447869115-m62jpevt8ca1q9m725g2h5eqothjhfi9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYOPElnne3McnPsDyzrIjannJ2W2dNUUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000447869115-m62jpevt8ca1q9m725g2h5eqothjhfi9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000447869115:android:513256bed051fdae7e699e",
+        "android_client_info": {
+          "package_name": "com.example.uitm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000447869115-m62jpevt8ca1q9m725g2h5eqothjhfi9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYOPElnne3McnPsDyzrIjannJ2W2dNUUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000447869115-m62jpevt8ca1q9m725g2h5eqothjhfi9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000447869115:android:8fdf4b231819b3027e699e",
+        "android_client_info": {
+          "package_name": "evereast.co.doctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000447869115-m62jpevt8ca1q9m725g2h5eqothjhfi9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYOPElnne3McnPsDyzrIjannJ2W2dNUUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000447869115-m62jpevt8ca1q9m725g2h5eqothjhfi9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

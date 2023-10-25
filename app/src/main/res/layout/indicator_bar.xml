@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ created by Sayem Hossen Saimon on  at .
+Email: saimonchowdhuryi96@gmail.com.
+Phone: +8801882046404.
+-->
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hsv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbarThumbHorizontal="@null">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:transitionName="transition"
+            android:id="@+id/pp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/circle_outlined_for_air"
+            android:gravity="center"
+            android:text="@string/pp"
+            android:textAllCaps="false"
+            android:textColor="@color/app_bar_color" />
+
+        <TextView
+            android:transitionName="transition"
+            android:id="@+id/cc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/circle_outlined_for_air"
+            android:gravity="center"
+            android:text="@string/cc"
+            android:textAllCaps="false"
+            android:textColor="@color/app_bar_color" />
+
+        <TextView
+            android:transitionName="transition"
+            android:id="@+id/ho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/circle_outlined_for_air"
+            android:gravity="center"
+            android:text="@string/ho"
+            android:textAllCaps="false"
+            android:textColor="@color/app_bar_color" />
+
+        <TextView
+            android:transitionName="transition"
+            android:id="@+id/ix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/circle_outlined_for_air"
+            android:gravity="center"
+            android:text="@string/ix"
+            android:textAllCaps="false"
+            android:textColor="@color/app_bar_color" />
+
+        <TextView
+            android:transitionName="transition"
+            android:id="@+id/dx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/circle_outlined_for_air"
+            android:gravity="center"
+            android:text="@string/dx"
+            android:textAllCaps="false"
+            android:textColor="@color/app_bar_color" />
+
+        <TextView
+            android:transitionName="transition"
+            android:id="@+id/rx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/circle_outlined_for_air"
+            android:gravity="center"
+            android:text="@string/rx"
+            android:textAllCaps="false"
+            android:textColor="@color/app_bar_color" />
+
+        <TextView
+            android:transitionName="transition"
+            android:id="@+id/ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/circle_outlined_for_air"
+            android:gravity="center"
+            android:text="@string/ad"
+            android:textAllCaps="false"
+            android:textColor="@color/app_bar_color" />
+
+        <TextView
+            android:visibility="gone"
+            android:transitionName="transition"
+            android:id="@+id/fu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/circle_outlined_for_air"
+            android:gravity="center"
+            android:text="@string/fu"
+            android:textAllCaps="false"
+            android:textColor="@color/app_bar_color" />
+
+    </LinearLayout>
+
+
+</HorizontalScrollView>

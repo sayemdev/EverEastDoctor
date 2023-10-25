@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ created by Sayem Hossen Saimon on  at .
+Email: saimonchowdhuryi96@gmail.com.
+Phone: +8801882046404.
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/homeMenuId"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_unselected"
+        app:showAsAction="always"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/inboxMenuId"
+        android:enabled="true"
+        android:icon="@drawable/ic_email_unselected"
+        app:showAsAction="always"
+        android:title="Inbox"/>
+    <item
+        android:id="@+id/billingMenuId"
+        android:enabled="true"
+        android:icon="@drawable/ic_billing"
+        app:showAsAction="always"
+        android:title="Bill"/>
+
+
+</menu>

@@ -1,0 +1,244 @@
+<resources>
+    <string name="app_name">Evereast Professional</string>
+    <string name="lorem_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="lorem_heading">Lorem Ipsum</string>
+    <string name="lorem_heading_bn">নমুনা লেখা</string>
+    <string name="lorem_text_bn">আমার বাংলা নিয়ে প্রথম কাজ করবার সুযোগ তৈরি হয়েছিল অভ্র নামক এক যুগান্তকারী বাংলা সফ্‌টওয়্যার হাতে পাবার মধ্য দিয়ে।</string>
+    <string name="next">Next</string>
+    <string name="next_bn">পরে</string>
+    <string name="previous">Previous</string>
+    <string name="previous_bn">পূর্বে</string>
+    <string name="get_started">Get Started</string>
+    <string name="get_started_bn">শুরু করুন</string>
+    <string name="english">English</string>
+    <string name="bangla">বাংলা</string>
+    <string name="i_agree_wit">I agree with <u>terms &amp; condition</u> of Evereast</string>
+    <string name="get_otp">Get Otp</string>
+
+    <string name="we_have_sen">We have sent sms to</string>
+    <string name="recover_we_have_sen">Recover your account\n we have sent sms to</string>
+    <string name="verify">Verify</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_your_phone_number">Edit Your Phone Number</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="create_account">Create Account</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_address">Your Address</string>
+    <string name="birthday">Birthday</string>
+    <string name="gender">Gender</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="re_enter_password">Re-enter password</string>
+    <string name="already_have_an_account"><u>Already working with us?</u></string>
+    <string name="select_gender">Select Gender</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="create_another_account">Work with us</string>
+    <string name="choose_your_account">Choose Type</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="skip">Skip</string>
+    <string name="skip2"><u>Skip</u></string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="book_your_specialist">Book Your Specialist</string>
+    <string name="skin_care">Skin Care</string>
+    <string name="medicine">Medicine</string>
+    <string name="pediatrics">Pediatrics</string>
+    <string name="psychiatry">Psychiatry</string>
+    <string name="sexcure">Sex Cure</string>
+    <string name="nutrition">Nutrition</string>
+    <string name="talk_with_a_doctor_now">Talk with a doctor now</string>
+    <string name="quick_appointment">Quick Appointment</string>
+    <string name="e_store">E-Store</string>
+    <string name="bandid">Bandid</string>
+    <string name="injection">Injection</string>
+    <string name="others">Others</string>
+    <string name="bn">Bn</string>
+    <string name="en">En</string>
+    <string name="sample_phone">+8801882046404</string>
+    <string name="edit_your_profile">Edit your profile</string>
+    <string name="login_in_your_account">Login</string>
+    <string name="_017xxxxxxxx">017XXXXXXXX</string>
+    <string name="pass_hint">* * * * * * *</string>
+    <string name="login">Login</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="i_don_t_have_an_account">I don\'t have an account</string>
+    <string name="sign_in_another_account">Login in your account</string>
+    <string name="signin">Signin</string>
+    <string name="recover_your_account">Recover your account</string>
+    <string name="try_another_account"><u>Try another account</u></string>
+    <string name="submit">Submit</string>
+    <string name="new_password">New password</string>
+    <string name="re_enter_new_password">Re-enter new password</string>
+    <string name="reset_your_account">Reset your account</string>
+    <string name="dr_fahad_bin_alauddin">Dr. Fahad Bin Alauddin</string>
+    <string name="fee_199tk">Fee:199tk</string>
+    <string name="who_is_the_appointment_for">Who is the appointment for?</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="proceed">Proceed</string>
+    <string name="if_you_book">If you book appointment from this account, prescription will be generated under this users name</string>
+    <string name="e_g_symptoms_duration">e:g: Symptoms, duration</string>
+    <string name="upload">Upload</string>
+    <string name="e_g_prescription_report_photo">e:g: prescription, report, photo</string>
+    <string name="congratulations_your_appointment_is_successfully_booked">Congratulations//!  Your appointment is successfully booked.</string>
+    <string name="enter_a_title">Enter a title</string>
+    <string name="search_by_speciality">Search by speciality</string>
+    <string name="name_farhan">Farhan</string>
+    <string name="title">Title</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="time">Time</string>
+    <string name="title_activity_inbox_tabbed">InboxTabbedActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="edit">Edit Profile</string>
+    <string name="current_password">Current Password</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="ent">ENT</string>
+    <string name="cardiology">Cardiology</string>
+    <string name="psychology">Psychology</string>
+    <string name="ophthalmology">Ophthalmology</string>
+    <string name="surgery">Surgery</string>
+    <string name="neurology">Neurology</string>
+    <string name="nephrology">Nephrology</string>
+    <string name="oncology">Oncology</string>
+    <string name="endocrinology">Endocrinology</string>
+    <string name="hepatology">Hepatology</string>
+    <string name="pulmonology">Pulmonology</string>
+    <string name="gynaecology">Gynaecology</string>
+    <string name="rheumatology">Rheumatology</string>
+    <string name="urology">Urology</string>
+    <string name="dental">Dental</string>
+    <string name="orthopedics">Orthopedics</string>
+    <string name="verify_your">Enter your mobile number. We will send you a one-time verification code</string>
+    <string name="work_with_us"><u><b>Work with us</b></u></string>
+    <string name="apply">Apply</string>
+    <string name="bmdc"><![CDATA[BMD&C Registration number]]></string>
+    <string name="offline">Offline</string>
+    <string name="online">Online</string>
+
+    <!--Call-->
+    <string name="calls_app_name">Evereast Professional</string>
+    <string name="calls_quickstart_version">Quickstart %s</string>
+    <string name="calls_sdk_version">SDK %s</string>
+    <string name="calls_sign_in_with_qrcode">Sign in with QR code</string>
+    <string name="calls_scanning_a_qrcode_description">Scan QR code from Calls studio on Sendbird dashboard.</string>
+    <string name="calls_or">Or</string>
+    <string name="calls_sign_in_manually">Sign in with ID</string>
+    <string name="calls_sign_in_manually_title">Sign in</string>
+    <string name="calls_app_id">Application ID</string>
+    <string name="calls_user_id">User ID</string>
+    <string name="calls_access_token">Access token (optional)</string>
+    <string name="calls_sign_in">Sign in</string>
+
+    <string name="calls_empty_nickname">—</string>
+    <string name="calls_user_id_format">User ID: %s</string>
+    <string name="calls_and_character">" · "</string>
+
+    <string name="calls_notification_voice_calling_content">Voice call from Evereast</string>
+    <string name="calls_notification_video_calling_content">Video call from Evereast</string>
+    <string name="calls_notification_accept">Accept</string>
+    <string name="calls_notification_decline">Decline</string>
+    <string name="calls_notification_end">End</string>
+
+    <string name="calls_make_a_call">Make a call</string>
+    <string name="calls_history">Recents</string>
+    <string name="calls_no_call_history">No call history</string><!-- remove -->
+    <string name="calls_settings">Settings</string>
+    <string name="calls_application_information">Application information</string>
+    <string name="calls_application_name">Name</string>
+    <string name="calls_application_id">ID</string>
+    <string name="calls_sign_out">Sign out</string>
+
+    <string name="calls_muted_this_call">%s is muted</string>
+    <string name="calls_incoming_voice_call">Incoming voice call&#8230;</string>
+    <string name="calls_incoming_video_call">Incoming video call&#8230;</string>
+    <string name="calls_connecting_call">Connecting&#8230;</string>
+    <string name="calls_calling">Making voice call&#8230;</string>
+    <string name="calls_video_calling">Making video call&#8230;</string>
+    <string name="calls_ending_voice_call">voice call ending&#8230;</string>
+    <string name="calls_ending_video_call">video call ending&#8230;</string>
+
+    <string name="calls_end_result_no_answer">No answer</string>
+    <string name="calls_end_result_canceled">Canceled</string>
+    <string name="calls_end_result_declined">Declined</string>
+    <string name="calls_end_result_completed">Ended</string>
+    <string name="calls_end_result_timed_out">Timed out</string>
+    <string name="calls_end_result_connection_lost">Connection lost</string>
+    <string name="calls_end_result_unknown">Unknown</string>
+    <string name="calls_end_result_accept_failed">Accept failed</string>
+    <string name="calls_end_result_dial_failed">Dial failed</string>
+    <string name="calls_end_result_other_device_accepted">Other device accepted</string>
+
+    <string name="calls_invalid_notifications_setting_in_dashboard">Turn on notifications on the Sendbird dashboard to allow mobile sign in.</string>
+    <string name="calls_invalid_qrcode">This QR code is not valid. Go to Calls studio and try scanning your QR code again.</string>
+    <string name="calls_invalid_deep_link">Invalid deep link</string>
+    <string name="calls_deep_linking_to_authenticate_failed">Could not authenticate deep link.</string>
+    <string name="templates">Templates</string>
+    <string name="create_new">Create new</string>
+    <string name="age">Age</string>
+    <string name="phone">Phone</string>
+    <string name="date">Date</string>
+    <string name="particulars">Particulars</string>
+    <string name="pp">Pp</string>
+    <string name="cc">Cc</string>
+    <string name="ho">Ho</string>
+    <string name="ix">Ix</string>
+    <string name="dx">Dx</string>
+    <string name="rx">Rx</string>
+    <string name="ad">Ad</string>
+    <string name="fu">Fu</string>
+    <string name="follow_up">Follow up</string>
+    <string name="advice">Advice</string>
+    <string name="investigation">Investigation</string>
+    <string name="diagnosis">Diagnosis</string>
+    <string name="seen">seen</string>
+    <string name="delivered">" "</string>
+    <string name="default_notification_channel_id">Evereast Professional</string>
+    <string name="fu_toword">You have successfully issued prescription. Add note about the consultation and complete the appointment</string>
+    <string name="permission_text">This app need File Camera and Microphone access to Send documents for prescription and Consult with doctor in video call</string>
+    <string name="add"><b>+</b> Add</string>
+    <string name="no_appointment_in_pending">No appointment in pending</string>
+    <string name="history_not_available">Appointments not available</string>
+    <string name="how_was_the_experience">How was the experience?</string>
+    <string name="rather_not_to_say">Rather not to say</string>
+    <string name="message_no_storage_permission_snackbar">Camera permission not given</string>
+    <string name="settings">Settings</string>
+    <string name="permission_not_granted">Permission not granted</string>
+    <string name="startyourChamber">Start your virtual chamber anytime, anywhere</string>
+    <string name="mbbs">MBBS</string>
+    <string name="failed_to_load">Failed to load image</string>
+    <string name="title_activity_zoom_image">View Image</string>
+    <string name="all">All</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="completed">Completed</string>
+    <string name="exit_app">Exit App</string>
+    <string name="are_you_sure_to_exit_healthmen_patient_app">Are you sure to close Evereast Professional Application</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="messenger">Messenger</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="facebook">Facebook</string>
+    <string name="dont_take_without_pres">ডাক্তারের পরামর্শ ছাড়া ঔষুধ সেবন করবেন না।</string>
+    <string name="advices">Advises</string>
+    <string name="your_appointment_is_completed_with">Your appointment is completed with %s .Chat has been ended. You can visit previous chat</string>
+    <string name="name_">"Name- "</string>
+    <string name="gen_please_wait" translatable="false">Please wait</string>
+    <string name="gen_pdf_file" translatable="false">Generating pdf file</string>
+    <string name="for_customer_service_or_to_report_any_issue_please_call_8809678221190_for_quick_response" translatable="false">For Customer Service or to report any issue please <b>Call +8809678221190</b> for Quick Response</string>
+    <string name="details">Details</string>
+    <string name="rate_now">Rate</string>
+    <string name="view_details">View Details</string>
+    <string name="main_app_name">@string/app_name</string>
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="search_hint">Search</string>
+
+    <string-array name="typesAge">
+        <item>Age Type</item>
+        <item>Year</item>
+        <item>Month</item>
+        <item>Day</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ created by Sayem Hossen Saimon on  at .
+Email: saimonchowdhuryi96@gmail.com.
+Phone: +8801882046404.
+-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate
+            android:fromDegrees="40"
+            android:pivotX="100%"
+            android:pivotY="0%"
+            android:toDegrees="0" >
+            <shape android:shape="rectangle">
+                <stroke android:width="8dp" android:color="@color/chat_incomming" />
+            </shape>
+        </rotate>
+    </item>
+    <item android:right="8dp">
+        <shape android:shape="rectangle" >
+            <solid android:color="@color/chat_incomming" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+</layer-list>

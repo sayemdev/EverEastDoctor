@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="doctor.RXActivities.IXActivity">
+
+    <include layout="@layout/indicator_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/hsv"
+        android:fillViewport="true"
+        android:scrollbarThumbVertical="@null">
+
+
+        <LinearLayout
+            android:id="@+id/mainLT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+
+            <TextView
+                android:id="@+id/headingTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Investigation"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/cgNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:transitionName="CH_transition"
+                android:visibility="gone">
+
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <ProgressBar
+                android:id="@+id/loader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <!-- <com.google.android.material.chip.Chip
+                 android:id="@+id/discount30"
+                 style="@style/CustomChip"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="start"
+                 android:paddingBottom="12dp"
+                 android:text="Give 30% Discount"
+                 android:textSize="14sp"
+                 app:checkedIconEnabled="false"
+                 app:closeIconTint="@color/white"
+                 app:textEndPadding="12dp"
+                 app:textStartPadding="12dp">
+
+             </com.google.android.material.chip.Chip>-->
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/discount30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/round"
+                android:paddingStart="24dp"
+                android:paddingTop="6dp"
+                android:paddingEnd="24dp"
+                android:paddingBottom="6dp"
+                android:text="Give 30% Discount"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:background="@drawable/edit_text_rect"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/search_items"
+                    android:layout_width="0dp"
+                    android:background="@android:color/transparent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/search_hint"
+                    android:padding="12dp" />
+
+                <Button
+                    android:id="@+id/searchBt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/add"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/cgSelected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/previousButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp"
+        android:background="@drawable/circle"
+        android:elevation="4dp"
+        android:onClick="Previous"
+        android:src="@drawable/ic_left" />
+
+    <ImageButton
+        android:id="@+id/endSession"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp"
+        android:background="@drawable/circle"
+        android:elevation="4dp"
+        android:onClick="EndSession"
+        android:src="@drawable/ic_end_session" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:background="@drawable/circle"
+        android:elevation="4dp"
+        android:onClick="Next"
+        android:src="@drawable/ic_arrow_right" />
+</RelativeLayout>

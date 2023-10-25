@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "doctor.healthmen.com.bd",
+    "sha256_cert_fingerprints":
+    ["7B:E7:3F:B8:64:29:E6:10:BB:93:94:F6:76:56:92:65:8E:3E:07:75:04:B2:D6:3C:4C:55:20:95:C3:2B:1E:F5"]
+  }
+}]

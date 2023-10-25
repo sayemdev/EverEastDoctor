@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="evereast.co.doctor">
+
+    <uses-sdk tools:overrideLibrary="com.google.zxing.client.android" />
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- [QRCode] -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".utils.BaseApplication"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DoctorHealthMen"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup"
+        tools:targetApi="m">
+        <activity
+            android:name=".Activity.KeyboardActivity"
+            android:exported="true" >
+
+           <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+
+        </activity>
+        <activity
+            android:name=".RXFragments.PrescriptionFlowActivity"
+            android:exported="true">
+
+            <!--
+                <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".Activity.HistoryApActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SendingChatImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ContactUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ZoomImageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_zoom_image"
+            android:theme="@style/Theme.HealthMen.NoActionBarTransparent" />
+        <activity
+            android:name=".Activity.ViewProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MissedAppointmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Drug.DrugDirectoryActivity"
+            android:windowSoftInputMode="adjustNothing" />
+<!--
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Theme.DoctorHealthMen.Action" />
+-->
+        <activity android:name=".Activity.ViewImageActivity" />
+        <activity android:name=".Activity.GiveFromTemplateActivity" />
+        <activity android:name=".Activity.ViewTemplatePrescription" />
+        <activity android:name=".Activity.ShowTemplatesActivity" />
+        <activity android:name=".Activity.HistoryActivity" />
+        <activity android:name=".TemplatesActivity" />
+        <!--
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:launchMode="standard"
+            tools:replace="android:launchMode" />
+        -->
+        <!-- [START fcm_default_icon] -->
+        <!--
+ Set custom default icon. This is used when no icon is set for incoming notification messages.
+             See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/cc_logo" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="Default" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/app_bar_color" /> <!-- [END fcm_default_icon] -->
+        <!-- [START fcm_default_channel] -->
+        <service
+            android:name=".Notification.MyFirebaseMsgService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="io.sentry.dsn"
+            android:value="https://125759c8a87549758a515fa37f6184dc@o4505231071838208.ingest.sentry.io/4505231073673216" /> <!-- enable automatic breadcrumbs for user interactions (clicks, swipes, scrolls) -->
+        <meta-data
+            android:name="io.sentry.traces.user-interaction.enable"
+            android:value="true" /> <!-- enable screenshot for crashes -->
+        <meta-data
+            android:name="io.sentry.attach-screenshot"
+            android:value="true" /> <!-- enable view hierarchy for crashes -->
+        <meta-data
+            android:name="io.sentry.attach-view-hierarchy"
+            android:value="true" /> <!-- enable the performance API by setting a sample-rate, adjust in production env -->
+        <meta-data
+            android:name="io.sentry.traces.sample-rate"
+            android:value="1.0" /> <!-- enable profiling when starting transactions, adjust in production env -->
+        <meta-data
+            android:name="io.sentry.traces.profiling.sample-rate"
+            android:value="1.0" />
+
+        <activity android:name=".Activity.ViewPrescriptionActivity" />
+        <activity android:name=".Drug.DrugListActivity" />
+        <activity android:name=".RXActivities.PreviewActivity" />
+        <activity
+            android:name=".RXActivities.FUActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".RXActivities.ADActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".RXActivities.RXActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".RXActivities.DXActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".RXActivities.IXActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".RXActivities.HOActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".RXActivities.CCActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".RXActivities.PPActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".Activity.GetPInputActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".Activity.EPrescriptionActivity" />
+        <activity android:name=".Activity.PendingMessageActivity" />
+        <activity android:name=".Activity.ApplyToWorkActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity android:name=".Activity.GetPhoneInput" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="OPEN_INBOX" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.ViewDetailsActivity" />
+        <activity
+            android:name=".chat.ChatActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY_1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "sendbird://” -->
+                <data android:scheme="sendbird" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".RCVr" />
+
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            tools:replace="screenOrientation" />
+
+        <receiver android:name=".Work.AlarmReceiver" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".login.VideoCallActivity"
+            android:configChanges="orientation|smallestScreenSize|screenSize|screenLayout"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:supportsPictureInPicture="true"
+            android:taskAffinity=".FLAG_ACTIVITY_NEW_TASK"
+            android:theme="@style/CallTheme"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".login.AudioCallActivity"
+            android:allowEmbedded="true"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true" />
+        <activity
+            android:name=".login.AcceptRejectCall"
+            android:exported="false" />
+
+        <service
+            android:name=".express.FloatingWindowService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".express.AudioFloatingWindowService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".AcceptOrRejectReceiver"
+            android:exported="true" />
+    </application>
+
+</manifest>

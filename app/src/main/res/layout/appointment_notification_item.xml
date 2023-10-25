@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><!-- created by Sayem Hossen Saimon on  at .
+Email: saimonchowdhuryi96@gmail.com.
+Phone: +8801882046404.
+-->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginEnd="6dp"
+    android:layout_marginBottom="3dp"
+    android:id="@+id/mcv"
+    app:cardBackgroundColor="@color/unseen_bg_color"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="2.5"
+            android:src="@drawable/round_health"
+            app:civ_border="false" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight=".5" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notificationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dp"
+                android:text="@string/title"
+                android:textColor="@color/black_text_secondary"
+                android:textSize="16sp"
+                tools:text="Session Completed" />
+
+            <TextView
+                android:id="@+id/notificationSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="6dp"
+                android:text="@string/subtitle"
+                android:textColor="@color/black_text_secondary"
+                android:textSize="12sp"
+                tools:text="Your appointment session with Dr. Imran has been
+successfully completed. Tap to view prescription." />
+
+            <TextView
+
+                android:id="@+id/notificationTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/time"
+                android:textColor="@color/black_text_secondary"
+                android:textSize="12sp"
+                tools:text="Just Now" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
